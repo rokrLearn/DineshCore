@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Address implements Serializable{
+public class Address  implements Serializable {
 	
 	private static final long serialVersionUID = 2L;
 
@@ -64,16 +64,14 @@ public class Address implements Serializable{
 		this.country = country;
 	}
 	
-	@OneToMany
-	private List<Person> personlst;
-	
-	public List<Person> getPersonlst(){
-		return personlst;
-	}
-	
-	public void setPersonlst(List<Person> personlst) {
-		this.personlst = personlst;
-	}
+	/*
+	 * @OneToMany(mappedBy="address") private List<Person> personlst;
+	 * 
+	 * public List<Person> getPersonlst(){ return personlst; }
+	 * 
+	 * public void setPersonlst(List<Person> personlst) { this.personlst =
+	 * personlst; }
+	 */
 	
 	public Address(Long id, String streetName, String city, String state, String country) {
 		super();

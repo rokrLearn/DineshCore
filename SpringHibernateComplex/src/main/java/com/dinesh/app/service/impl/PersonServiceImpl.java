@@ -36,13 +36,19 @@ public class PersonServiceImpl implements PersonService{
 	public Person addPersonDetails() {
 		List<Person> personlst = new ArrayList<>();
 		
+		Address a = new Address(2l, "Bhumkar Chowk", "Pune",
+				"Maharashtra", "india");
+		
 		Person p = new Person(1l, "Dinesh", "Purty", 
 				Gender.MALE, "29", BloodGroup.B_RhD_POSITIVE);
+		p.setAddress(a);
 		
 		personlst.add(p);
 		
 		p = new Person(2l, "Sagar", "Agarwal",
 				Gender.MALE, "30", BloodGroup.O_RhD_POSITIVE);
+		
+		p.setAddress(a);
 		
 		personlst.add(p);
 		
@@ -53,6 +59,18 @@ public class PersonServiceImpl implements PersonService{
 		
 		p = new Person(4l, "Sahil", "Sharma",
 				Gender.MALE, "28", BloodGroup.B_RhD_POSITIVE);
+		
+		p.setAddress(a);
+		
+		personlst.add(p);
+		
+		a = new Address(3l, "Ravet", "Pune",
+				"Maharashtra", "india");
+		
+		p = new Person(3l, "Ketki", "Mali",
+				Gender.FEMALE, "31", BloodGroup.AB_RhD_POSITIVE);
+		
+		p.setAddress(a);
 		
 		personlst.add(p);
 		
