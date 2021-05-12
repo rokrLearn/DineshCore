@@ -11,5 +11,8 @@ spring:
       ddl-auto: create-drop
   h2:
     console:
-      enabled: true      
+      enabled: true 
+  jackson:
+    serialization:
+      fail-on-empty-beans: false         
     
