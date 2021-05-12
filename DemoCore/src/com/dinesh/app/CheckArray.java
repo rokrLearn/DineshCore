@@ -16,6 +16,7 @@ public class CheckArray {
 	
 	private void justCheck() throws MineException{
 		System.out.println("Check Statememnt !!");
+		//Can uncomment based on your desired output
 		//throw new MineException("Method justCheck");
 	}
 }
