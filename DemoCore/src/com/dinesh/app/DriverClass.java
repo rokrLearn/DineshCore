@@ -11,7 +11,7 @@ public class DriverClass {
 
 	public static void main(String args[]) throws ParseException {
 		
-		String sDate1="31/12/1998";  
+		/*String sDate1="31/12/1998";  
 	    Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1); 
 	    
 	    String sDate2="05/08/1998";  
@@ -54,6 +54,13 @@ public class DriverClass {
 		System.out.println("==========================");
 		DateCompare dc = new DateCompare();
 		Collections.sort(movieLst, dc);
-		movieLst.forEach(o -> System.out.println(o));
+		movieLst.forEach(o -> System.out.println(o));*/
+		
+		try {
+		CheckArray a = new CheckArray();
+		a.checkArrayFunc(0);
+		}catch(Exception e) {
+			System.out.println("Exception : "+e);
+		}
 	}
 }
